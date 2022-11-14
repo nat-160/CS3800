@@ -18,7 +18,7 @@ public class Connect4Server {
 
     public static void main(String[] args) throws Exception {
         try (var listener = new ServerSocket(58901)) {
-            System.out.println("Tic Tac Toe Server is Running...");
+            System.out.println("Connect4 Server is Running...");
             var pool = Executors.newFixedThreadPool(200);
             while (true) {
                 Game game = new Game();
